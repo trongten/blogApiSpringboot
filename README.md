@@ -4,8 +4,8 @@ This personal Blog application is built using Spring Boot along with Spring Data
 
 | Method | Url | Decription | Sample Valid Request Body | 
 | ------ | --- | ---------- | --------------------------- |
-| POST   | /api/auth/signup | Sign up | [JSON](#signup) |
-| POST   | /api/auth/signin | Log in | [JSON](#signin) |
+| POST   | /api/signup | Sign up | [JSON](#signup) |
+| POST   | /api/signin | Log in | [JSON](#signin) |
 
 ### Users
 
@@ -35,7 +35,7 @@ This personal Blog application is built using Spring Boot along with Spring Data
 | PUT    | /api/comment/{id} | Update comment | [JSON](#commentupdate) |
 | DELETE | /api/comment/{id} | Delete comment | |
 
-##### <a id="signup">Sign Up -> /api/auth/signup</a>
+##### <a id="signup">Sign Up -> /api/signup</a>
 ```json
 {
   "name": "Phan Vo Trong",
@@ -45,7 +45,7 @@ This personal Blog application is built using Spring Boot along with Spring Data
 }
 ```
 
-##### <a id="signin">Log In -> /api/auth/signin</a>
+##### <a id="signin">Log In -> /api/signin</a>
 ```json
 {
   "username": "trongten112944",
@@ -53,7 +53,7 @@ This personal Blog application is built using Spring Boot along with Spring Data
 }
 ```
 
-##### <a id="userupdate">Update User -> /api/users/{username}</a>
+##### <a id="userupdate">Update User -> /api/user/{id}</a>
 ```json
 {
   "name": "Phan Vo Trong",
@@ -61,7 +61,7 @@ This personal Blog application is built using Spring Boot along with Spring Data
 }
 ```
 
-##### <a id="postcreate">Create Post -> /api/posts</a>
+##### <a id="postcreate">Create Post -> /api/post</a>
 ```json
 {
   "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
@@ -69,7 +69,7 @@ This personal Blog application is built using Spring Boot along with Spring Data
 }
 ```
 
-##### <a id="postupdate">Update Post -> /api/posts/{id}</a>
+##### <a id="postupdate">Update Post -> /api/post/{id}</a>
 ```json
 {
   "title": "UPDATED UPDATED UPDATED UPDATED UPDATED UPDATED",
@@ -77,7 +77,7 @@ This personal Blog application is built using Spring Boot along with Spring Data
 }
 ```
 
-##### <a id="commentcreate">Create Comment -> /api/posts/{postId}/comments</a>
+##### <a id="commentcreate">Create Comment -> /api/comment</a>
 ```json
 {
   "postId": 1,
@@ -85,7 +85,7 @@ This personal Blog application is built using Spring Boot along with Spring Data
 }
 ```
 
-##### <a id="commentupdate">Update Comment -> /api/posts/{postId}/comments/{id}</a>
+##### <a id="commentupdate">Update Comment -> /api/comment/{id}</a>
 ```json
 {
   "postId": 1,
