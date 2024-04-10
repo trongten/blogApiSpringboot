@@ -38,57 +38,57 @@ This personal Blog application is built using Spring Boot along with Spring Data
 ##### <a id="signup">Sign Up -> /api/auth/signup</a>
 ```json
 {
-    "name": "Phan Vo Trong",
-    "email":"trongnweogwe@gmail.com",
-	  "username": "trongten112944",
-    "password":"Password100"
+"name": "Phan Vo Trong",
+"email":"trongnweogwe@gmail.com",
+"username": "trongten112944",
+"password":"Password100"
 }
 ```
 
 ##### <a id="signin">Log In -> /api/auth/signin</a>
 ```json
 {
-	  "username": "trongten112944",
-    "password":"Password100"
+"username": "trongten112944",
+"password":"Password100"
 }
 ```
 
 ##### <a id="userupdate">Update User -> /api/users/{username}</a>
 ```json
 {
-    "name": "Phan Vo Trong",
-    "password":"Password100"
+"name": "Phan Vo Trong",
+"password":"Password100"
 }
 ```
 
 ##### <a id="postcreate">Create Post -> /api/posts</a>
 ```json
 {
-	"title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-	"content": "quia et suscipit suscipit recusandae consequuntur expedita et cum"
+"title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+"content": "quia et suscipit suscipit recusandae consequuntur expedita et cum"
 }
 ```
 
 ##### <a id="postupdate">Update Post -> /api/posts/{id}</a>
 ```json
 {
-	"title": "UPDATED UPDATED UPDATED UPDATED UPDATED UPDATED",
-	"content": "UPDATED UPDATED UPDATED UPDATED UPDATED UPDATED UPDATED UPDATED UPDATED "
+"title": "UPDATED UPDATED UPDATED UPDATED UPDATED UPDATED",
+"content": "UPDATED UPDATED UPDATED UPDATED UPDATED UPDATED UPDATED UPDATED UPDATED "
 }
 ```
 
 ##### <a id="commentcreate">Create Comment -> /api/posts/{postId}/comments</a>
 ```json
 {
-  "postId": 1,
-	"content": "laudantium enim quasi est quidem magnam voluptate ipsam eos tempora quo "
+"postId": 1,
+"content": "laudantium enim quasi est quidem magnam voluptate ipsam eos tempora quo "
 }
 ```
 
 ##### <a id="commentupdate">Update Comment -> /api/posts/{postId}/comments/{id}</a>
 ```json
 {
-  "postId": 1,
-	"content": "UPDATED UPDATED UPDATED UPDATED UPDATED UPDATED  "
+"postId": 1,
+"content": "UPDATED UPDATED UPDATED UPDATED UPDATED UPDATED  "
 }
 ```
