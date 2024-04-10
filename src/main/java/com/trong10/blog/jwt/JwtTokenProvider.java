@@ -10,6 +10,7 @@ import java.util.Date;
 @Component
 @Slf4j
 public class JwtTokenProvider {
+    //Only Demo
     private final String JWT_SECRET = "okletgo";
     private final long JWT_EXPIRATION = 604800000L;
 
